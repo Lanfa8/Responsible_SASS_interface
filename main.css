@@ -1,0 +1,818 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+body {
+  color: #ffffff;
+  background-color: #0c161c;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  height: 56px;
+  float: left;
+  min-height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+nav {
+  min-height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px #3d4549 solid;
+}
+
+.nav-bar-block {
+  min-height: 56px;
+}
+
+.margin-right {
+  margin-right: 20px;
+}
+
+.nav-itens {
+  position: relative;
+}
+
+.nav-itens:hover {
+  cursor: pointer;
+}
+
+.nav-itens:before, .nav-itens:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 0px;
+  height: 5px;
+  margin: 5px 0 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition-duration: 0.40s;
+          transition-duration: 0.40s;
+  opacity: 0;
+  background-color: #f7ff1a;
+}
+
+.nav-itens:before {
+  left: 50%;
+}
+
+.nav-itens:after {
+  right: 50%;
+}
+
+.nav-itens:hover:before, .nav-itens:hover:after {
+  width: 50%;
+  opacity: 1;
+}
+
+.logo {
+  max-width: 80px;
+}
+
+.meio-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .meio-mobile {
+    display: block;
+  }
+}
+
+.flecha-dropdown {
+  min-width: 20px;
+  min-height: 20px;
+  fill: #ffffff;
+  margin: 10px 0px 10px 10px;
+}
+
+.button-login {
+  background-color: #3d4549;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 18px;
+}
+
+.button-teste {
+  background-color: #f7ff1a;
+  color: black;
+  text-decoration: none;
+  padding: 10px 18px;
+}
+
+.pesquisa-icon {
+  fill: #ffffff;
+  min-width: 27px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .esquerda > ul {
+    display: none;
+  }
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 100px;
+  min-height: calc(100vh - 57px - 78px);
+}
+
+@media only screen and (max-width: 1184px) {
+  .container {
+    margin: 0px 20px;
+  }
+}
+
+.linha-solo {
+  width: 100%;
+}
+
+.todos-os-esportes-dropdown {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.flecha-dropdown-embaixo {
+  min-width: 25px;
+  min-height: 25px;
+  fill: #ffffff;
+  margin: 8px;
+}
+
+.linha-datas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px #3d4549 solid;
+}
+
+@media only screen and (max-width: 1000px) {
+  .linha-datas {
+    overflow: scroll;
+  }
+}
+
+.mes {
+  width: 20%;
+  color: #6d7174;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .mes {
+    display: none;
+  }
+}
+
+.dias-navegacao {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dias-navegacao > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dias-navegacao > a {
+  padding: 2.5%;
+}
+
+.dias-navegacao > a:hover {
+  background-color: #f7ff1a;
+  color: #0c161c;
+}
+
+@media only screen and (min-width: 1500px) {
+  .dias-navegacao > a {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .dias-navegacao {
+    width: 100%;
+  }
+}
+
+.flecha-dias-esquerda {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  min-width: 30px;
+  min-height: 30px;
+  fill: #ffffff;
+}
+
+.flecha-dias-direita {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  min-width: 30px;
+  min-height: 30px;
+  fill: #ffffff;
+}
+
+.number {
+  font-size: 19pt;
+  text-align: center;
+}
+
+.centralize {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .centralize {
+    display: none !important;
+  }
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.parte-superior {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: top;
+      -ms-flex-pack: top;
+          justify-content: top;
+}
+
+.jogos-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.jogos-container > a > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.jogo-card {
+  margin: 20px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.jogo-card > div > img {
+  max-width: 450px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .jogo-card > div > img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.jogo-card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  .jogo-card {
+    margin: 10px 0px;
+  }
+}
+
+.descricao-jogo {
+  font-size: 11pt;
+  color: #6d7174;
+  font-weight: 300;
+}
+
+.rodape {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: #6d7174 1px solid;
+}
+
+.rodape-box {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.rodape-box > div {
+  padding: 5px 25px;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .rodape-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    width: 100%;
+  }
+}
+
+.pronto:before, .pronto:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 50%;
+  height: 5px;
+  margin: 5px 0 0;
+  opacity: 1;
+  background-color: #f7ff1a;
+}
+
+.pronto-a {
+  border-bottom: 5px #f7ff1a solid;
+}
+
+@media only screen and (max-width: 1000px) {
+  .some-direita {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.menu-icon {
+  max-width: 30px;
+}
+
+.icon-mobile {
+  height: 0px;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .icon-mobile {
+    height: 57px;
+  }
+}
+
+.mobile-menu-dropdown {
+  z-index: 10;
+  display: none;
+  background-color: #0c161c;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: absolute;
+  width: 100%;
+}
+
+.mobile-menu-dropdown > li {
+  padding: 10px;
+}
+
+.mobile-menu-dropdown > li > a {
+  width: 100%;
+  text-align: center;
+}
+
+.pronto-mobile:before, .pronto-mobile:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 50%;
+  height: 2px;
+  margin: 5px 0 0;
+  opacity: 1;
+  background-color: #f7ff1a;
+}
+
+.transmissao-container {
+  position: relative;
+  overflow: hidden;
+  height: calc(100% - 57px);
+}
+
+.img-jogo-previa {
+  position: absolute;
+  z-index: -1;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.escrita-sobre-o-jogo {
+  height: 100%;
+  padding: 200px;
+  width: 70vw;
+  margin-bottom: 800px;
+  background: #0c161c;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(12, 22, 28, 0.706)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(90deg, rgba(12, 22, 28, 0.706) 50%, rgba(0, 0, 0, 0) 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 1000px) {
+  .escrita-sobre-o-jogo {
+    background: #0c161c;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(12, 22, 28, 0.70632)), to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(0deg, rgba(12, 22, 28, 0.70632) 55%, rgba(0, 0, 0, 0) 100%);
+    width: 100vw;
+    text-align: center;
+    padding: 30px;
+  }
+}
+
+.escrita-titulo {
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.escrita-jogo {
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.escrita-disponibilidade {
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.escrita-texto {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.button-copa {
+  margin: 15px auto;
+  min-width: 300px;
+  text-align: center;
+}
+
+.container-buttons-copa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (100%)[5];
+      grid-template-columns: repeat(5, 100%);
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.wrapper section {
+  width: 100%;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[5];
+      grid-template-columns: repeat(5, auto);
+  margin: 20px;
+}
+
+.wrapper section .item {
+  position: relative;
+  padding: 0 2px;
+  -webkit-transition: 250ms all;
+  transition: 250ms all;
+  margin: auto;
+}
+
+.wrapper section .item:hover {
+  margin: 0 40px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.wrapper section .item .heading {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+}
+
+.wrapper section .item .duration {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  color: #fff;
+}
+
+.wrapper section .arrow__btn {
+  position: absolute;
+  color: #fff;
+  text-decoration: none;
+  font-size: 6em;
+  background: black;
+  width: 80px;
+  padding: 20px;
+  text-align: center;
+  z-index: 1;
+}
+
+.wrapper section .left-arrow {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), to(black));
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+}
+
+.wrapper section .right-arrow {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(black));
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+}
+
+.imgs-carrousel {
+  max-width: 341px;
+}
+
+.text-center {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 23px;
+  display: block;
+  text-align: center;
+}
+
+.box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.89);
+  border-radius: 3px;
+  padding: 70px 100px;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-container label {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 16px;
+  color: #fff;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.input-container input {
+  border: 0;
+  border-bottom: 1px solid #555;
+  background: transparent;
+  width: 100%;
+  padding: 8px 0 5px 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+.input-container input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #f7ff1a;
+}
+
+.btn {
+  width: 100%;
+  color: #0c161c;
+  background-color: #f7ff1a;
+  outline: none;
+  border: 0;
+  font-style: italic;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  margin-top: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label {
+  top: -12px;
+  font-size: 12px;
+}
+
+.container-login {
+  margin: 0px 20px;
+}
+
+.login-container {
+  min-width: 400px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+  .login-container {
+    min-width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

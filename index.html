@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRAMAÇÃO</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="imagem/png" href="imgs/page-icon.png" />
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class='esquerda nav-bar-block'>
+                <div class='icon-mobile' onclick="mostraMenu()">
+                    <button class='mobile-menu'><img src="imgs/lista.svg" alt="menu" class='menu-icon'></button>
+                </div>
+                <ul>
+                    <li class='margin-right'><img src="imgs/logo.svg" alt="logo da web app" class='logo'></li>
+                    <li class='margin-right nav-itens'>INÍCIO</li>
+                    <li class='margin-right nav-itens pronto'>PROGRAMAÇÃO</li>
+                    <li class='margin-right nav-itens'>ESPORTES </li>
+                    <li class='nav-itens'>MAIS DETALHES</li>
+                </ul>
+            </div>
+            <div class="meio-mobile">
+                <a href='#'>
+                    <img src="imgs/logo.svg" alt="logo da web app" class='logo'>
+                </a>
+            </div>
+            <div class='direita nav-bar-block'>
+                <ul>
+                    <li class='margin-right some-direita'><a href='login.html' class='button-login'>ENTRAR</a></li>
+                    <li class='margin-right  some-direita'><a href='#' class='button-teste'>EXPERIMENTE GRATIS POR 1 MES</a></li>
+                    <li class='margin-right'>
+                        <svg class='pesquisa-icon' viewBox="0 0 240 240">
+                            <g fill-rule="evenodd">
+                                <path d="M147.318 153.682l6.364-6.364 40.351 40.35-6.364 6.365z"></path>
+                                <path
+                                    d="M160 107.5c0-28.995-23.505-52.5-52.5-52.5S55 78.505 55 107.5 78.505 160 107.5 160s52.5-23.505 52.5-52.5zm-114 0C46 73.534 73.534 46 107.5 46S169 73.534 169 107.5 141.466 169 107.5 169 46 141.466 46 107.5z"
+                                    fill-rule="nonzero"></path>
+                            </g>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class='mobile-menu-dropdown' id='mobile-menu-dropdown'>
+        <li class='nav-itens mobile'>INÍCIO</li>
+        <li class='nav-itens pronto-mobile mobile'><a href='index.html'>PROGRAMAÇÃO</a></li>
+        <li class='nav-itens mobile'>ESPORTES</li>
+        <li class='nav-itens'>MAIS DETALHES</li>
+        <li class=''><a href='login.html' class='button-login'>ENTRAR</a></li>
+        <li class=''><a href='#' class='button-teste'>EXPERIMENTE GRATIS POR 1 MES</a></li>
+    </div>
+    <div class="container">
+        <div class='parte-superior'>
+            <div class='linha-solo'>
+                <div class='todos-os-esportes-dropdown'>TODOS OS ESPORTES <svg class='flecha-dropdown-embaixo'
+                        alt="icone-flecha" viewBox="0 0 16 16">
+                        <polygon points="8 11.41 3.29 6.71 4.71 5.29 8 8.59 11.29 5.29 12.71 6.71 8 11.41">
+                        </polygon>
+                    </svg>
+                </div>
+            </div>
+            <div class='linha-datas'>
+                <div class='mes'>
+                    JANEIRO
+                </div>
+                <div class='dias-navegacao'>
+                    <div class='centralize'>
+                        <svg class='flecha-dias-esquerda' alt="icone-flecha" viewBox="0 0 16 16">
+                            <polygon points="8 11.41 3.29 6.71 4.71 5.29 8 8.59 11.29 5.29 12.71 6.71 8 11.41">
+                            </polygon>
+                        </svg>
+                    </div>
+                    <a href='#'>
+                        <div class='number'>17</div>
+                        <div>DOM</div>
+                    </a>
+                    <a href='#'>
+                        <div class='number'>18</div>
+                        <div>SEG</div>
+                    </a>
+                    <a href='#' class="pronto-a">
+                        <div class='number'>19</div>
+                        <div>HOJE</div>
+                    </a>
+                    <a href='#'>
+                        <div class='number'>20</div>
+                        <div>QUA</div>
+                    </a>
+                    <a href='#'>
+                        <div class='number'>21</div>
+                        <div>QUI</div>
+                    </a>
+                    <a href='#'>
+                        <div class='number'>22</div>
+                        <div>SEX</div>
+                    </a>
+                    <a href='#'>
+                        <div class='number'>23</div>
+                        <div>SAB</div>
+                    </a>
+                    <a href='#'>
+                        <div class='number'>24</div>
+                        <div>DOM</div>
+                    </a>
+                    <a href='#'>
+                        <div class='number'>25</div>
+                        <div>SEG</div>
+                    </a>
+                    <div class="centralize">
+                        <svg class='flecha-dias-direita' alt="icone-flecha" viewBox="0 0 16 16">
+                            <polygon points="8 11.41 3.29 6.71 4.71 5.29 8 8.59 11.29 5.29 12.71 6.71 8 11.41">
+                            </polygon>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="jogos-container">
+                <a href="pagina-copa-do-brasil.html">
+                    <div class='jogo-card'>
+                        <div><img src="imgs/classico.jpg" alt="gremio X palmeiras"></div>
+                        <div class='titulo-jogo'>Copa do Brasil - Palmeiras x Grêmio - Jogo 1 </div>
+                        <div class='descricao-jogo'>Copa do Brasil | ASSISTA AO VIVO às 18:30</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class='jogo-card'>
+                        <div><img src="imgs/cblol.jpg" alt="cblol"></div>
+                        <div class='titulo-jogo'>CBLOL - Dia 1 - Semana 2</div>
+                        <div class='descricao-jogo'>CBLOL | Começou às 12:30</div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class='jogo-card'>
+                        <div><img src="imgs/formulaone.jpg" alt="fórmula 1"></div>
+                        <div class='titulo-jogo'>Fórmula 1 - GP de Abu Dhabi - Etapa 18 </div>
+                        <div class='descricao-jogo'>Fórmula 1 | ASSISTA AO VIVO às 19:30</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class='jogo-card'>
+                        <div><img src="imgs/Basquete.jpg" alt="basquete  confronto"></div>
+                        <div class='titulo-jogo'>NBA - Golden State Warriors x Toronto Raptors - Jogo 3 </div>
+                        <div class='descricao-jogo'>NBA | ASSISTA AO VIVO às 20:00</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class='jogo-card'>
+                        <div><img src="imgs/volei.jpg" alt="volei confronto"></div>
+                        <div class='titulo-jogo'>Superliga de Vôleibol - Barueri x Sesi Bauru</div>
+                        <div class='descricao-jogo'>Superliga de Vôleibol | ASSISTA AO VIVO às 21:30</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class='rodape'>
+        <div class='rodape-box'>
+            <div>Ajuda</div>
+            <div>FAQ</div>
+            <div>Termos de uso</div>
+            <div>Política de privacidade</div>
+            <div>A marca</div>
+            <div>Mídia</div>
+            <div>Sobre nós</div>
+            <div>Resgatar</div>
+            <div>ALAN<sup>TM</sup></div>
+        </div>
+
+    </footer>
+</body>
+<script src='main.js'>
+</script>
+
+</html>

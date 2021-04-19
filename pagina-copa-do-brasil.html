@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COPA DO BRASIL</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="imagem/png" href="imgs/page-icon.png" />
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class='esquerda nav-bar-block'>
+                <div class='icon-mobile' onclick="mostraMenu()">
+                    <button class='mobile-menu'><img src="imgs/lista.svg" alt="menu" class='menu-icon'></button>
+                </div>
+                <ul>
+                    <li class='margin-right'><img src="imgs/logo.svg" alt="logo da web app" class='logo'></li>
+                    <li class='margin-right nav-itens'>INÍCIO</li>
+                    <li class='margin-right nav-itens'><a href='index.html'>PROGRAMAÇÃO</a></li>
+                    <li class='margin-right nav-itens'>ESPORTES <svg class='flecha-dropdown' alt="icone-flecha"
+                            viewBox="0 0 16 16">
+                            <polygon points="8 11.41 3.29 6.71 4.71 5.29 8 8.59 11.29 5.29 12.71 6.71 8 11.41">
+                            </polygon>
+                        </svg></li>
+                    <li class='nav-itens'>MAIS DETALHES</li>
+                </ul>
+            </div>
+            <div class="meio-mobile">
+                <a href='#'>
+                    <img src="imgs/logo.svg" alt="logo da web app" class='logo'>
+                </a>
+            </div>
+            <div class='direita nav-bar-block'>
+                <ul>
+                    <li class='margin-right some-direita'><a href='login.html' class='button-login'>ENTRAR</a></li>
+                    <li class='margin-right some-direita'><a href='#' class='button-teste'>EXPERIMENTE GRATIS POR 1
+                            MES</a></li>
+                    <li class='margin-right'>
+                        <svg class='pesquisa-icon' viewBox="0 0 240 240">
+                            <g fill-rule="evenodd">
+                                <path d="M147.318 153.682l6.364-6.364 40.351 40.35-6.364 6.365z"></path>
+                                <path
+                                    d="M160 107.5c0-28.995-23.505-52.5-52.5-52.5S55 78.505 55 107.5 78.505 160 107.5 160s52.5-23.505 52.5-52.5zm-114 0C46 73.534 73.534 46 107.5 46S169 73.534 169 107.5 141.466 169 107.5 169 46 141.466 46 107.5z"
+                                    fill-rule="nonzero"></path>
+                            </g>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class='mobile-menu-dropdown' id='mobile-menu-dropdown'>
+        <li class='nav-itens mobile'>INÍCIO</li>
+        <li class='nav-itens mobile'><a href='index.html' style='text-align: left;'>PROGRAMAÇÃO</a></li>
+        <li class='nav-itens mobile'>ESPORTES</li>
+        <li class='nav-itens'>MAIS DETALHES</li>
+        <li class=''><a href='login.html' class='button-login'>ENTRAR</a></li>
+        <li class=''><a href='#' class='button-teste'>EXPERIMENTE GRATIS POR 1 MES</a></li>
+    </div>
+    <div class="transmissao-container">
+        <div class='img-jogo-previa'>
+            <img src="imgs/gremio.jpg" alt=""/>
+        </div>
+        <div class='escrita-sobre-o-jogo'>
+            <div class='escrita-titulo'>Assista no ALAN</div>
+            <div class='escrita-jogo'>Palmeiras x Grêmio</div>
+            <div class='escrita-disponibilidade'>Disponível até terça-feira 26/01 às 18:30</div>
+            <div class='escrita-texto'>O Grêmio tenta tenta firmar seu espírito copeiro em busca da sua 6º Copa do Brasil e, para isso, enfrenta o
+                Palmeiras, o porco, o qual vem com uma campanha praticamente impecável, sendo o único time brasileiro ainda vivo nas 3 maiores competições. Assista ao vivo no ALAN! Narração
+                de Eduardo Alberti Garbolin.</div>
+            <div class='container-buttons-copa'>
+                <a href='login.html' class='button-login button-copa'>ENTRAR</a>
+                <a href='#' class='button-teste button-copa'>EXPERIMENTE GRATIS POR 1 MES</a>
+            </div>
+        </div>
+    </div>
+    <div class='carrousel-jogos'>
+        <div class="wrapper">
+
+            <section id="section1">
+              <a href="#section3" class="arrow__btn left-arrow">‹</a>
+              <div class="item">
+                <a href="#">
+                  <img
+                    src="imgs/cblol.jpg"
+                    alt="Describe Image"
+                    class='imgs-carrousel'>
+                    <h1 class="heading">CBLOL</h1>
+                    <p class="duration">Transmitido há: AO VIVO</p>
+                </a>
+              </div>
+              <div class="item">
+          
+                <a href="#">
+                <img
+                  src="imgs/Formulaone.jpg"
+                  alt="Formula 1 Image"
+                  class='imgs-carrousel'>
+                  <h1 class="heading">Fórmula 1</h1>
+                  <p class="duration">Transmitido há: 2 horas</p>
+                  
+                </a>
+              </div>
+              <div class="item">
+                
+                <a href="#">
+                <img
+                  src="imgs/Basquete.jpg"
+                  alt="basquete confront Image"
+                  class='imgs-carrousel'>
+                  <h1 class="heading">GSW x TR</h1>
+                  <p class="duration">Transmitido há: 3 horas</p>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img
+                    src="imgs/cblol.jpg"
+                    alt="Describe Image"
+                    class='imgs-carrousel'>
+                    <h1 class="heading">CBLOL</h1>
+                    <p class="duration">Transmitido há: AO VIVO</p>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img
+                    src="imgs/cblol.jpg"
+                    alt="Describe Image"
+                    class='imgs-carrousel'>
+                    <h1 class="heading">CBLOL</h1>
+                    <p class="duration">Transmitido há: AO VIVO</p>
+                </a>
+              </div>
+
+              <a href="#section2" class="arrow__btn right-arrow">›</a>
+            </section>
+          
+            <section id="section2">
+              <a href="#section1" class="arrow__btn left-arrow">‹</a>
+            <div class="item">
+                <a href="#">
+                <img
+                  src="imgs/volei.jpg"
+                  alt="volei Image"
+                  class='imgs-carrousel'>
+                  
+                  <h1 class="heading">Barueri x SESI</h1>
+                  <p class="duration">Transmitido há: 4 horas</p>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                <img
+                  src="imgs/volei.jpg"
+                  alt="volei Image"
+                  class='imgs-carrousel'>
+                  
+                  <h1 class="heading">Barueri x SESI</h1>
+                  <p class="duration">Transmitido há: 4 horas</p>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                <img
+                  src="imgs/volei.jpg"
+                  alt="volei Image"
+                  class='imgs-carrousel'>
+                  
+                  <h1 class="heading">Barueri x SESI</h1>
+                  <p class="duration">Transmitido há: 4 horas</p>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img
+                    src="imgs/cblol.jpg"
+                    alt="Describe Image"
+                    class='imgs-carrousel'>
+                    <h1 class="heading">CBLOL</h1>
+                    <p class="duration">Transmitido há: AO VIVO</p>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img
+                    src="imgs/cblol.jpg"
+                    alt="Describe Image"
+                    class='imgs-carrousel'>
+                    <h1 class="heading">CBLOL</h1>
+                    <p class="duration">Transmitido há: AO VIVO</p>
+                </a>
+              </div>
+              <a href="#section3" class="arrow__btn right-arrow">›</a>
+            </section>
+          
+            <section id="section3">
+              <a href="#section2" class="arrow__btn left-arrow">‹</a>
+              <div class="item">
+          
+                <a href="#">
+                <img
+                  src="imgs/Formulaone.jpg"
+                  alt="Formula 1 Image"
+                  class='imgs-carrousel'>
+                  <h1 class="heading">Fórmula 1</h1>
+                  <p class="duration">Transmitido há: 2 horas</p>
+                  
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img
+                    src="imgs/cblol.jpg"
+                    alt="Describe Image"
+                    class='imgs-carrousel'>
+                    <h1 class="heading">CBLOL</h1>
+                    <p class="duration">Transmitido há: AO VIVO</p>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img
+                    src="imgs/cblol.jpg"
+                    alt="Describe Image"
+                    class='imgs-carrousel'>
+                    <h1 class="heading">CBLOL</h1>
+                    <p class="duration">Transmitido há: AO VIVO</p>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img
+                    src="imgs/cblol.jpg"
+                    alt="Describe Image"
+                    class='imgs-carrousel'>
+                    <h1 class="heading">CBLOL</h1>
+                    <p class="duration">Transmitido há: AO VIVO</p>
+                </a>
+              </div>
+
+              <div class="item">
+                
+                <a href="#">
+                <img
+                  src="imgs/Basquete.jpg"
+                  alt="basquete confront Image"
+                  class='imgs-carrousel'>
+                  <h1 class="heading">GSW x TR</h1>
+                  <p class="duration">Transmitido há: 3 horas</p>
+                </a>
+              </div>
+          
+              <a href="#section1" class="arrow__btn right-arrow">›</a>
+            </section>
+          </div>
+    </div>
+    <footer class='rodape'>
+        <div class='rodape-box'>
+            <div>Ajuda</div>
+            <div>FAQ</div>
+            <div>Termos de uso</div>
+            <div>Política de privacidade</div>
+            <div>A marca</div>
+            <div>Mídia</div>
+            <div>Sobre nós</div>
+            <div>Resgatar</div>
+            <div>ALAN<sup>TM</sup></div>
+        </div>
+
+    </footer>
+</body>
+<script src='main.js'>
+</script>
+
+</html>
